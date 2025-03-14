@@ -6,10 +6,11 @@
     <title>Poemario</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-      
-        #navbar a{
-            text-decoration: none;
-            color: gray;
+        
+        body {
+            background: linear-gradient(120deg, #1B1B1E, #2D2A32, #3E3A40); /* Tonos oscuros para un ambiente íntimo */
+            color: #EAE0D5; /* Blanco tenue para la lectura */
+            min-height: 100vh;
         }
         #carouselNextPrev {
             position: absolute;
@@ -17,23 +18,33 @@
             transform: translateY(-50%);
             height: auto;
         }
-        
         .carousel-item img {
-        width: 100%;
-        height: 400px; /* Ajusta la altura según necesites */
-        object-fit: cover; /* Recorta la imagen sin deformarla */
-    }
+            width: 50%;
+            object-fit: cover; /* Recorta la imagen sin deformarla */
+        }
+        #navbar a{
+            text-decoration: none;
+        }
+        .navbar {
+            background-color: #3E2C41; /* Púrpura oscuro para un toque artístico */
+        }
+        .navbar-brand, .nav-link {
+            color: #E6B8A2 !important; /* Un dorado suave para resaltar */
+        }
+.navbar-nav .nav-link:hover {
+            color: #FFD700 !important; /* Efecto dorado al pasar el mouse */
+        }
 
     </style>
 </head>
-<body class="bg-secondary">
+<body>
     <div class="container sticky-top"> <!--Header, navigation bar-->
-        <nav class="navbar navbar-expand-lg bg-secondary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid ">
                 <a class="navbar-brand  text-light" href="#">What's your mood?</a>
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item mx-5"> 
-                        <a class="nav-link  text-light" href="#">Happy</a>
+                        <a class="nav-link  text-light" href="https://luchineytor.github.io/Poemario/index.html">Home</a>
                     </li>
                     <li class="nav-item mx-5">
                         <a class="nav-link  text-light" href="#">Sad</a>
@@ -53,7 +64,7 @@
     </div>    
     <div class="container mb-5"> <!--Carousel-->
         <div class="row "> 
-            <div id="carouselheader" class="carousel slide carousel-fade bg-secondary" data-bs-ride="carousel" >
+            <div id="carouselheader" class="carousel slide carousel-fade" data-bs-ride="carousel" >
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselheader" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselheader" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -93,7 +104,7 @@
     <div class="row text-justify "> <!--cards-->
         <div class="col-12 col-lg-4">
             <div class="card mx-auto" style="width: 18rem;">
-                    <img src="Images\732e1476-2d66-4ebd-a985-7ab069347938.jpg" class="card-img-top" alt="A porsche picture">
+                    <img src="Images\732e1476-2d66-4ebd-a985-7ab069347938.jpg" class="card-img-top" alt="A couple's picture">
                     <div class="card-body">
                         <h5 class="car-title">Espantapajaros</h5>
                         <p class="card-text">
@@ -104,14 +115,7 @@
                             al hecho de que amanezcan con un aliento afrodisíaco<br>
                             o con un aliento insecticida.<br>
                             Soy perfectamente capaz de soportarles<br>
-                            una nariz que sacaría el primer premio<br>
-                            en un concurso de zanahorias;<br>
-                            ¡pero eso sí! ,y en esto soy irreductible<br>
-                            ,no les perdono, bajo ningún pretexto, que no sepan volar.<br>
-                            Si no saben volar ¡pierden el tiempo las que pretendan seducirme!<br>
-                            Ésta fue -y no otra- la razón de que me enamorase,<br>
-                            tan locamente, de María Luisa.<br>
-                            ¿Qué me importaban sus labios por entregas y sus encelos sulfurosos?<br>
+                            una nariz que sacaría el primer premio
                         </p>
                         <a href="espantapajaros.html" class="btn btn-primary">Go to poem</a>
                     </div>
@@ -119,7 +123,7 @@
         </div>
         <div class="col-12 col-lg-4">
             <div class="card mx-auto" style="width: 18rem;">
-                    <img src="Images\The Second Death of Pablo Neruda.jpg" class="card-img-top" alt="A landscape picture">
+                    <img src="Images\The Second Death of Pablo Neruda.jpg" class="card-img-top" alt="A couple's picture">
                     <div class="card-body">
                         <h5 class="car-title">20</h5>
                         <p class="card-text">
@@ -131,17 +135,14 @@
                             Yo la quise, y a veces ella también me quiso.<br>
                             En las noches como ésta la tuve entre mis brazos.<br>
                             La besé tantas veces bajo el cielo infinito.<br>
-                            Ella me quiso, a veces yo también la quería.<br>
-                            Cómo no haber amado sus grandes ojos fijos.<br>
-                            Puedo escribir los versos más tristes esta noche.<br>
-                            Pensar que no la tengo. Sentir que la he perdido.</p>
+                           </p>
                         <a href="#" class="btn btn-primary">Go to poem</a>
                     </div>
             </div>
         </div>
         <div class="col-12 col-lg-4">
             <div class="card mx-auto" style="width: 18rem;">
-                    <img src="Images\Eduardo Kingman Riofrio.jpg" class="card-img-top" alt="A landscape picture">
+                    <img src="Images\Eduardo Kingman Riofrio.jpg" class="card-img-top" alt="A couple's picture">
                     <div class="card-body">
                         <h5 class="car-title">Rostro de vos</h5>
                         <p class="card-text">
@@ -164,16 +165,6 @@
                             por época<br>
                             por tacto<br>
                             y por sabor.<br>
-                            <br>
-                            Sin temblor de más<br>
-                            me abrazo a tus ausencias<br>
-                            que asisten y me asisten<br>
-                            con mi rostro de vos.<br>
-                            <br>
-                            Estoy lleno de sombras<br>
-                            de noches y deseos<br>
-                            de risas y de alguna<br>
-                            maldición.<br>
                         </p>
                         <a href="#" class="btn btn-primary" >Go to poem</a>
                     </div>
