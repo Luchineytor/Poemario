@@ -21,7 +21,7 @@
         .carousel-item img {
             width: 100%; /* Make images responsive */
             object-fit: cover; /* Recorta la imagen sin deformarla */
-            max-height: 300px; /* Set a maximum height for the images */
+            max-height: 500px; /* Set a maximum height for the images */
         }
         #navbar a{
             text-decoration: none;
@@ -57,21 +57,28 @@
     <div class="container sticky-top"> <!--Header, navigation bar-->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid ">
-                <a class="navbar-brand  text-light" href="#">Home</a>
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item mx-5">
-                        <a class="nav-link  text-light" href="#">Sad</a>
-                    </li>
-                    <li class="nav-item mx-5"> 
-                        <a class="nav-link  text-light" href="#">Blue</a>
-                    </li>
-                    <li class="nav-item mx-5"> 
-                        <a class="nav-link  text-light" href="#">Angry</a>
-                    </li>
-                    <li class="nav-item mx-5"> 
-                        <a class="nav-link  text-light" href="#">Horny</a>
-                    </li>
-                </ul>
+                <!--menu collapser movil button-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <a class="navbar-brand  text-light" href="#">Home</a>
+                    
+                    <div class="collapse navbar-collapse" id="navbar-nav">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item mx-5">
+                                <a class="nav-link  text-light" href="#">Sad</a>
+                            </li>
+                            <li class="nav-item mx-5"> 
+                                <a class="nav-link  text-light" href="#">Blue</a>
+                            </li>
+                            <li class="nav-item mx-5"> 
+                                <a class="nav-link  text-light" href="#">Angry</a>
+                            </li>
+                            <li class="nav-item mx-5"> 
+                                <a class="nav-link  text-light" href="#">Horny</a>
+                            </li>
+                        </ul>
+                    </div>
             </div>
         </nav>
     </div>    
