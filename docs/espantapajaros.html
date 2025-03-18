@@ -21,6 +21,9 @@
         .navbar-brand, .nav-link {
             color: #FFD1DC !important; /* Color de los enlaces */
         }    
+        .navbar a:hover {
+            color: #ebc258e3 !important; /* Color de los enlaces al pasar el ratón */
+        }
         #poem p{
             color:#6D6875;
         }   
@@ -32,23 +35,29 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid ">
                 <a class="navbar-brand  text-light" href="https://luchineytor.github.io/Poemario/index.html">Home</a>
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item mx-5"> 
-                        <a class="nav-link  text-light" href="#">Happy</a>
-                    </li>
-                    <li class="nav-item mx-5">
-                        <a class="nav-link  text-light" href="#">Sad</a>
-                    </li>
-                    <li class="nav-item mx-5"> 
-                        <a class="nav-link  text-light" href="#">Blue</a>
-                    </li>
-                    <li class="nav-item mx-5"> 
-                        <a class="nav-link  text-light" href="#">Angry</a>
-                    </li>
-                    <li class="nav-item mx-5"> 
-                        <a class="nav-link  text-light" href="#">Horny</a>
-                    </li>
-                </ul>
+                  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-5"> 
+                            <a class="nav-link  text-light" href="#">Happy</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link  text-light" href="#">Sad</a>
+                        </li>
+                        <li class="nav-item mx-5"> 
+                            <a class="nav-link  text-light" href="#">Blue</a>
+                        </li>
+                        <li class="nav-item mx-5"> 
+                            <a class="nav-link  text-light" href="#">Angry</a>
+                        </li>
+                        <li class="nav-item mx-5"> 
+                            <a class="nav-link  text-light" href="#">Horny</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </div>    
